@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav_menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- nav menu -->
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name"><img src="d.jpg" style="height: 50px; width: 50px; border-radius: 50%;"></p>
+            </div>
+            <div class="nav-menu" id="mynavemenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#project" class="nav-link">Project</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dark mode -->
+             <div class="mode">
+                <div class="moon-son" id="toggle-switch">
+                    <img src="moon-solid.svg" alt="Something went wrong" style="height: 20px; width: 20px;" id="moon">
+                    <img src="sun-solid.svg" alt="Something went wrong" style="height: 20px; width: 20px;" id="sun">
+                </div>
+             </div>
+             <div class="nev-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+             </div>
+        </nav>
+    <!-- main -->
+     <main class="wrapper">
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="hello">
+                <p>Hello I,m</p>
+            </div>
+            <div class="featured-name">
+                <span class="typed-text"></span>
+            </div>
+            <div class="text-info">
+                <p>My name is Dushyant Chauhan I am a web Developer with 3 Month experience</p>
+            </div>
+            <div class="text-btn">
+                <button class="btn hire-btn">Hire me</button>
+                <button class="btn">Download CV <img src="file-solid.svg" alt="Something went wrong" style="height: 10px; width: 10px;"></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon_circle"></div>
+                    <div class="icon"><img src="instagram-brands.svg" alt="Something went wrong" style="height:20px; width: 20px;"></div>
+                    <div class="icon"><img src="linkedin-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+                    <div class="icon"><img src="telegram-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+                    <div class="icon"><img src="square-github-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+            </div>
+        </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="d.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- about box -->
+         <section class="section" id="about">
+           <div class="top-header">
+            <h1>About me</h1>
+           </div>
+           <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <figure class="about-me">
+                        <figcaption>
+                            <img src="" alt="" class="profile">
+                            <h2>Web Developer</h2>
+                            <p>My name is Dushyant Chauhan I,m a Web Developer</p>
+                        </figcaption>
+                    </figure>
+                    <button class="about-me-btn">Hire me</button>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                        <div class="skill-bar html">
+                            <span class="skill-per">
+                            <span class="tooltip">80%</span>
+                        </span>
+                        </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+                        <div class="skill-bar css">
+                            <span class="skill-per">
+                            <span class="tooltip">60%</span>
+                        </span>
+                        </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">PYTHON</span>
+                        <div class="skill-bar python">
+                            <span class="skill-per">
+                            <span class="tooltip">70%</span>
+                        </span>
+                        </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">JavaScript</span>
+                        <div class="skill-bar javascript">
+                            <span class="skill-per">
+                            <span class="tooltip">40%</span>
+                        </span>
+                        </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">PHP</span>
+                        <div class="skill-bar php">
+                            <span class="skill-per">
+                            <span class="tooltip">30%</span>
+                        </span>
+                        </div>
+                </div>
+            </div>
+           </div>
+         </section>
+         <!-- project box -->
+          <section class="section" id="project">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <img src="briefcase-solid.svg" alt="Something went wrong" style="height: 20px; width: 20px;">
+                    <h3>Completed</h3>
+                    <label>20+ Finished Project</label>
+                </div>
+                <div class="project-box">
+                  <img src="user-solid.svg" alt="Something went wrong" style="width: 20px; height: 20px;" >
+                    <h3>Clients</h3>
+                    <label>70+ Happy Clients</label>
+                </div>
+                <div class="project-box">
+                    <img src="award-solid.svg" alt="Something went wrong" style="height: 20px; width: 20px;">
+                    <h3>Experience</h3>
+                    <label>Beginner</label>
+                </div>
+            </div>
+          </section>
+          <!-- content box -->
+           <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Let's Work together</h1>
+                <span>Do you have a Project in your mind, contact me here</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find me <img src="up-right-and-down-left-from-center-solid (1).svg" alt="" style="height: 20px; width: 20px;"></h2>
+                        <p><img src="envelope-solid.svg" alt="" style="height: 20px; width: 20px;">dushyantr737@gmail.com</p>
+                        <p><img src="phone-solid.svg" alt="" style="width: 20px; height: 20px;">Phone:9588139526</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Your Name">
+                            <input type="text" class="input-field" placeholder="Your Email">
+                        </div>
+                        <div class="text-area">
+                            <input type="text" class="input-subject" placeholder="subject">
+                            <textarea placeholder="message"></textarea>
+                        </div>
+                        <div class="from-button" onclick="sendmessage()">
+                            <button class="btn">Send <img class="i" src="paper-plane-solid.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+     </main>
+     <!-- footer -->
+      <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+            <li class="footer-menu_list">
+                <a href="#home">Home</a>
+            </li>
+            <li class="footer-menu_list">
+                <a href="#about">About</a>
+            </li>
+            <li class="footer-menu_list">
+                <a href="#project">Project</a>
+            </li>
+            <li class="footer-menu_list">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><img src="instagram-brands.svg" alt="Something went wrong" style="height:20px; width: 20px;"></div>
+            <div class="icon"><img src="linkedin-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+            <div class="icon"><img src="telegram-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+            <div class="icon"><img src="square-github-brands.svg" alt="Something went wrong" style="height: 20px; width: 20px;"></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &COPY; <a href="#home" style="text-decoration: none;">Dushyant Chauhan</a>.All right reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
